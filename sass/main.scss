@@ -1,0 +1,96 @@
+$font-family-sans-serif: 'Raleway', sans-serif;
+
+$primary:       #5265E1;
+$secondary:     #FA5959;
+
+
+$position-values: (
+  0: 0,
+  25: 25%,
+  50: 50%,
+  75: 75%,
+  100: 100%
+);
+
+$enable-negative-margins: true;
+
+$navbar-active-color:         $secondary;
+$navbar-light-hover-color:          $secondary;
+$navbar-dark-hover-color:           $secondary;
+
+$nav-link-color: dark;
+$nav-link-hover-color: $secondary;
+$nav-link-underline-active-color:   $secondary;
+
+$accordion-icon-active-color:      $secondary;
+$accordion-icon-color:             $primary;
+$accordion-button-active-bg: 0;
+$accordion-button-focus-box-shadow:       0;
+
+
+.btn.btn-light{
+  &:hover {
+    background-color: white;
+    border-color: black;
+    border-radius: 1;
+  }
+}
+.btn.btn-primary{
+  &:hover {
+    background-color: white;
+    color: $primary;
+  }
+}
+.btn.btn-secondary{
+   color: white;
+
+  &:hover {
+    background-color: white;
+    color: $secondary;
+  }
+}
+
+.icon{
+  &:hover{
+    filter: invert(43%) sepia(68%) saturate(555%) hue-rotate(312deg) brightness(100%) contrast(117%);
+  }
+ 
+}
+
+.accordion-button.collapsed {
+  &:hover {
+    color: $secondary;
+  }
+}
+
+
+
+.card-container {
+
+  justify-content: center;
+  
+  .card {
+    justify-content: center;
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 60px;
+    border: none;
+    padding: 10px;
+    
+    
+    &:nth-child(1) {
+      margin-top: -40px;
+    }
+    
+    &:nth-child(2) {
+     margin-top: 0px;
+    }
+    
+    &:nth-child(3) {
+      margin-top: 40px;
+    }
+  }
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
